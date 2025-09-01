@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Pagina Arinc Motrt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.cont{background: red;display: grid; grid-template-columns: 1fr 2fr 3fr;grid-template-rows: repeat(3, 1fr);height: 85%;}
+.e1{background: blue; grid-column: 1; grid-row: 1/4;}
+.e2{background: blueviolet;grid-column: 2/4;grid-row: 1;}
+.e3{background: green;grid-column: 2/4;grid-row: 2;}
+.e4{background: gold;grid-column: 2/4;grid-row: 3;display: flex;flex-direction: row;justify-content: space-around;align-items: center;}
+.e4s1{background: fuchsia;display: flex;height: 95%;width: 49%;}
+.e4s2{background: teal;  display: flex; flex-wrap: wrap;height: 95%;width: 49%;}
+@media screen and (max-width: 700px) {
+  .e4 {   
+    flex-direction: column;
+    flex: 100%;
+  }
+  .e4s1, .e4s2{height: 49%;width: 95%;}
+}
+</style>
+</head>
+<body>
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Sigue en desarrollo, si nota cualquier error se apreciaria que lo notificara de inmediato.</h4>
+</div>
+<div class="cont">
+  <div class="e1">1</div>
+  <div class="e2">2</div>
+  <div class="e3">3</div>
+  <div class="e4"><div class="e4s1">4s1</div><div class="e4s2">4s2</div></div>
+</div>
+</body>
+</html>
