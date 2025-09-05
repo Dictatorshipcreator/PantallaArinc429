@@ -23,6 +23,24 @@ body {
   .e4s1, .e4s2{height: 49%;width: 95%;}
 }
 </style>
+<style>
+    /*========Panel Styles==========*/
+    .panel:target {
+        display: block !important;
+    }
+    /* move button down so that it is still visible when
+        page navigates to new target */
+    .panel-button {
+        position: relative;
+        top: 45px;
+        margin-top: -40px;
+    }
+    /* Push content down to adjust for button position */
+    .panel {
+        margin-top: 5px;
+        padding-top: 50px;
+    }
+</style>
 </head>
 <body>
 <div style="background:yellow;padding:5px">
@@ -32,7 +50,59 @@ body {
   <div class="e1">1</div>
   <div class="e2">2</div>
   <div class="e3">3</div>
-  <div class="e4"><div class="e4s1">4s1</div><div class="e4s2">4s2</div></div>
+  <div class="e4"><div class="e4s2">4s1
+    <div class="panel-container">
+    
+    <div class="panel" id="about" style="display: none">
+       <div class="panel-border"> 1
+        <a class="panel-button" href="#try1">try1</a>
+        <a class="panel-button" href="#try2">try2</a>
+      </div>
+    </div> <div class="panel" id="interests" style="display: none">
+      <div class="panel-border"> 2
+      </div>
+    </div>
+    <div class="panel" id="music" style="display: none">
+      <div class="panel-border"> 3
+      </div>
+    </div>
+    <div class="panel" id="meet" style="display: none">
+      <div class="panel-border"> 4
+      </div>
+    </div>
+    <div class="panel" id="try1" style="display: none">
+      <div class="panel-border"> try1
+      </div>
+    </div>
+    <div class="panel" id="try2" style="display: none">
+      <div class="panel-border"> try2
+      </div>
+    </div>
 </div>
+  </div>
+  <div class="e4s1">4s2
+    <div class="panel-container">
+    <a class="panel-button" href="#about">About Me</a>
+    <a class="panel-button" href="#interests">Interests</a>
+    <a class="panel-button" href="#music">Music</a>
+    <a class="panel-button" href="#meet">Meet</a>
+    <div class="panel" id="about" style="display: none">
+       <div class="panel-border"> 1
+      </div>
+    </div> <div class="panel" id="interests" style="display: none">
+      <div class="panel-border"> 2
+      </div>
+    </div>
+    <div class="panel" id="music" style="display: none">
+      <div class="panel-border"> 3
+      </div>
+    </div>
+    <div class="panel" id="meet" style="display: none">
+      <div class="panel-border"> 4
+      </div>
+    </div>
+</div>
+  </div></div>
+</div></div>
 </body>
 </html>
